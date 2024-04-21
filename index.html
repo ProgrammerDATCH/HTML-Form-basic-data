@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+    <style>
+        .up{
+            background-color: orange;
+            margin-bottom: -20px;
+            padding:5px;
+            display: flex;
+            align-items: center;
+        }
+        #form-container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            color: white;
+        }
+        #form-container form {
+            background-color: black;
+            padding: 10px;
+        }
+        #form-container form table {
+            width: 100%;
+        }
+        #form-container form table td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="form-container">
+        <div class="up">
+            <h2>Sign Up</h2>
+        </div>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" placeholder="Enter First Name"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" placeholder="Enter Last Name"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td>
+                        <select name="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        <select name="month">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                        </select>
+                        <select name="year">
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td>
+                        <select name="country">
+                            <option value="rwanda">Rwanda</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="DRC">DRC</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="email" placeholder="Enter E-mail"></td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td><input type="tel" placeholder="Enter Phone"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
